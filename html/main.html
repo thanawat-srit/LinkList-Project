@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>LINKLIST</title>
+	<link rel="icon" type="image/x-icon" href="../img/sourceimg/LinkListIcon.ico">
+	<link type="text/css" rel="stylesheet" href="../css/main.css">
+	<script type="text/javascript" src="../js/main.js"></script>
+</head>
+
+<body>
+	<div class="header" id="header">
+		<h2 id="headertext">L I N K L I S T</h2>
+		<div id="newIcon"><a id="new" href="/gosave"><img id="newImg" src="../img/sourceimg/plus.png" alt=""></a></div>
+		<span id="spanTag">
+			<div id="divsortfav">
+				<h3 id="textsort">sort:</h3>
+				<span class="checkedtagList" id="sortOrder">
+					<input type="checkbox" id="Order" name="Order" value="Order" onclick="SortItem()" hidden>
+					<label id="Orderlabel" class="label" for="Order">A-Z</label>
+				</span>
+				<h3 id="textfavorite">favorite:</h3>
+				<div class="tagList" id="tagFavorite">
+					<input type="checkbox" id="FavoriteCB" name="FavoriteCB" value="Favorite" hidden>
+					<label class="label" for="FavoriteCB"><img id="tagimgfavorite"
+							src="../img/sourceimg/favoriteIcon.png"></label>
+				</div>
+			</div>
+
+			<div id="divtag">
+				<h3 id="texttag">tag:</h3>
+			</div>
+
+		</span>
+		<div id="divsearch">
+			<input type="search" id="inputSearch" name="search" value="" placeholder="search" autocomplete="off">
+		</div>
+		<div id="outIcon"><a id="out" href="/logout"><img id="outImg" src="../img/sourceimg/logout.png" alt=""></a>
+		</div>
+	</div>
+	<div id="griditem">
+
+	</div>
+</body>
+
+</html>

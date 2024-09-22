@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>LINKLIST</title>
+	<link rel="icon" type="image/x-icon" href="../img/sourceimg/LinkListIcon.ico">
+	<link type="text/css" rel="stylesheet" href="../css/styleSaveEdit.css">
+	<script type="text/javascript" src="../js/saveitem.js"></script>
+</head>
+
+<body>
+	<div class="header" id="header">
+		<h2 id="headertext">S A V E</h2>
+		<div id="divback">
+			<a id="backmain" href="/backmain"><img id="backImg" src="../img/sourceimg/back.png" alt=""></a>
+		</div>
+	</div>
+	<div id=container>
+		<div id="browsePic">
+			<img src="../img/sourceimg/defaultProfile.png" id="showimg" alt="default">
+		</div>
+		<div id="iteminfo">
+			<div id="gridnamelink">
+				<h3 id="nametext">Name:</h3><input type="text" name="name" id="name" value="" placeholder="" required autocomplete="off">
+				<br>
+				<h3 id="linktext">Link:</h3><input type="text" name="link" id="link" value="" placeholder="" required autocomplete="off">
+			</div>
+			<div id="gridfavorite">
+				<h3 id="favoritetext">Favorite:</h3>
+				<div class="divtagList">
+					<span class="checkedtagList" id="tagFavorite">
+						<input type="checkbox" id="FavoriteCB" name="FavoriteCB" value="Favorite" hidden>
+						<label class="label" for="FavoriteCB"><img id="imgfavorite"
+								src="../img/sourceimg/defaultFavoriteBlackIcon.png" alt=""></label>
+					</span>
+				</div>
+			</div>
+			<div id="gridtag">
+				<h3 id="tagtext">Tag:</h3>
+				<div id="divtagList" class="divtagList">
+					
+				</div>
+			</div>
+			<div id="divbutton">
+				<button id="savebutton"><img src="../img/sourceimg/save.png" alt="" id="saveimg"></button>
+
+			</div>
+			
+		</div>
+
+	</div>
+
+</body>
+
+</html>

@@ -1,0 +1,229 @@
+body{
+    margin: 0;
+	letter-spacing: 2px;
+	font-family: Arial, sans-serif;
+	background-color: #818181;
+	user-select: none;
+}
+input {
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.header {
+	height: 42px;
+    background-color: #333;
+    color: #ffffff;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	max-height: 39px;
+	position: sticky;
+    top: 0;
+    z-index: 190;
+	user-select: none;
+}
+#headertext{
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: 0px;
+}
+#backImg{
+	background-color: rgb(83, 84, 85);
+    width: 18px;
+    display: flex;
+    position: relative;
+    top: 3px;
+    left: 3px;
+    padding: 5px;
+    border-radius: 3px;
+}
+#divback{
+	display: inline-flex;
+    position: relative;
+    margin: 3px;
+}
+#container{
+	width: 1300px;
+	background-color: #333;
+	display: grid;
+	grid-template-columns: 52% auto;
+    margin-left: auto;
+    margin-right: auto;
+	margin-top: 32px;
+	margin-bottom: 32px;
+	padding: 64px;
+	border-radius: 20px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+#showimg{
+    width: 600px;
+    height: 600px;
+    background-color:#ffffff;
+	border-radius: 20px;
+	object-fit: cover;
+    object-position:top;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+#browsePic{
+	grid-column: 1 / span 1;
+}
+#iteminfo{
+	position: relative;
+	background-color:#ffffff;
+	grid-column: 2 / span 1;
+	border-radius: 20px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	width: 624px;
+	height: 604px;
+}
+/* ---------------------------------Namelink--------------------------------- */
+#gridnamelink{
+	display: grid;
+	grid-template-columns: 18% auto;
+	padding: 20px;
+	padding-left: 30px;
+	
+}
+#nametext{
+	grid-column: 1 / span 1;
+	display: inline;
+	margin-top: 30px;
+}
+#linktext{
+	grid-column: 1 / span 1;
+	display: inline;
+	margin-top: 30px;
+}
+#name{
+	grid-column: 2 / span 1;
+	width: 450px;
+	height: 18px;
+	margin-top: 30px;
+}
+#link{
+	grid-column: 2 / span 1;
+	width: 450px;
+	height: 18px;
+	margin-top: 30px;
+}
+/* ---------------------------------Namelink--------------------------------- */
+/* ---------------------------------Favorite--------------------------------- */
+#gridfavorite{
+	display: grid;
+	grid-template-columns: 18% auto;
+	padding: 20px;
+	padding-left: 30px;
+}
+#favoritetext{
+	grid-column: 1 / span 1;
+	margin-top: 20px;
+}
+#tagFavorite{
+	grid-column: 2 / span 1;
+	margin-top: 20px;
+	background-color: #ffffff;
+}
+/* ---------------------------------Favorite--------------------------------- */
+/* -----------------------------------Tag------------------------------------ */
+#gridtag{
+	display: grid;
+	grid-template-columns: 18% auto;
+	padding: 20px;
+	padding-left: 30px;
+}
+#tagtext{
+	grid-column: 1 / span 1;
+	margin-top: 20px;
+}
+#divtagList{
+	grid-column: 2 / span 1;
+	margin-top: 20px;
+}
+/* -----------------------------------Tag------------------------------------ */
+#imgfavorite{
+	width: 20px;
+}
+.label{
+    display: inline-flex;
+    height: 20px;
+    padding-top: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 4px;
+    font-size: 18px;
+}
+.divtagList{
+    display: inline-flex;
+    justify-content:left;
+    align-items: left;
+    position: relative;
+    bottom: 5px;
+}
+.tagList{
+    background-color: rgb(83, 84, 85);
+    margin-top: 3px;
+	margin-right: 10px;
+    border-radius: 3px;
+    user-select: none;
+    opacity: 40%;
+	color: #ffffff;
+	max-height: 28px;
+}
+.checkedtagList{
+    background-color: rgb(83, 84, 85);
+    margin-top: 3px;
+	margin-right: 10px;
+    border-radius: 3px;
+    user-select: none;
+	color: #ffffff;
+	max-height: 28px;
+}
+#divbutton{
+	position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+#savebutton{
+	border: none;
+	height: 45px;
+	border-radius: 5px;
+	background-color: #ffffff;
+}
+#deletebutton{
+	border: none;
+	height: 45px;
+	width: 45px;
+	border-radius: 5px;
+	margin-right: 10px;
+	background-color: #ffffff;
+}
+#saveimg{
+	margin-top: 2px;
+	width: 32px;
+}
+#deleteimg{
+	margin-top: 2px;
+	width: 32px;
+}
+@media screen and (max-width: 1400px) {
+	#container {
+		justify-content: center;
+		width: 650px;
+		grid-template-columns: auto;
+	}
+    #iteminfo{
+        grid-column: 1 / span 1;
+    }
+	#browsePic{
+		justify-content: center;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 60px;
+	}
+}
